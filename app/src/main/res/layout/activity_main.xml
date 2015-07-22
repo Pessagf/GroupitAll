@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/gradient_background"
+    android:id="@+id/">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_message"
+        android:id="@+id/tVWelcome"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="54dp"
+        android:textSize="35dp"
+        android:textColor="#ffff4915"
+        android:textAlignment="center"
+        android:singleLine="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/etPhoneNumber"
+        android:text="@string/enter_phone"
+        android:layout_marginTop="75dp"
+        android:textSize="25dp"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/tVWelcome"
+        android:layout_alignLeft="@+id/eTEmailAddress"
+        android:layout_alignStart="@+id/eTEmailAddress"
+        android:layout_alignRight="@+id/eTEmailAddress"
+        android:layout_alignEnd="@+id/eTEmailAddress" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/eTEmailAddress"
+        android:text="@string/enter_email"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:layout_below="@+id/tVor"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:id="@+id/tVor"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff1f2cff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verfication"
+        android:id="@+id/tVVerfication"
+        android:layout_below="@+id/eTEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="14dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Bt_continue"
+        android:id="@+id/btContinue"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tVVerfication"
+        android:layout_alignEnd="@+id/tVVerfication" />
+
+</RelativeLayout>
